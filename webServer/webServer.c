@@ -14,8 +14,8 @@
 
 
 //this is where you enter the default file directories
-char *defaultDir1 = "/home/rowan/Desktop/IMPORTANT/webServer/siteDirs.txt";
-char *defaultDir2 = "/home/rowan/Desktop/IMPORTANT/webServer/";
+char *defaultDir1 = "/directory/to/siteDirs.txt";
+char *defaultDir2 = "/directory/to/this/web/server/folder/";
 
 //this is so i can use strcasestr
 #define _GNU_SOURCE
@@ -943,48 +943,6 @@ int main() {
 
     return 0;
 }
-
-
-//cd /home/pi/Desktop/webServer/ && gcc webServer.c -o webServer -Wall -lpthread && "/home/pi/Desktop/webServer/"webServer -lpthread -Wall
-//for debugging address issues: cd /Users/rowan/Desktop/webServer\(Mac\)/ && gcc webServer.c -o webServer -Wall -lpthread -fsanitize=address && "/Users/rowan/Desktop/webServer(Mac)/"webServer -lpthread -Wall -fsanitize=address
-//get reading db info to work and also make sure i check the db data sent by client to make sure it doesnt break the functions
-
-
-//idk where to put this rn
-/*
-if ((endOfPost = strchr(fullResp, '\n')) != NULL) {
-            postContentLength = strstr(fullResp, "Content-Length:");
-            if (postContentLength != NULL) {
-                strcpy(tempPost, postContentLength);
-
-                finalPostLength = strchr(tempPost, ' ');
-
-                contentLen = atoi(finalPostLength);
-
-
-                char tempFull[contentLen];
-                readSock = read(acceptSock, tempFull, contentLen);
-                strcat(fullResp, tempFull);
-                refindBody = strstr(fullResp, "\r\n\r\n");
-                strncpy(finalBody, refindBody, contentLen+4);
-            }
-
-
-            if (strlen(endOfPost) > 4) {
-                convertToDB(finalBody);
-            }
-
-            printf("newline detected\n");
-            break;
-        } else if (readSock < 0) {
-            //perror("endOfHttpBody error");
-
-            *fullResp = '\0';
-
-            close(acceptSock);
-            return 0;
-        }
-*/
 
 
 
