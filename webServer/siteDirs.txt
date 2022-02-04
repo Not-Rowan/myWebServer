@@ -1,0 +1,23 @@
+<
+	sitedomain ytviewer.ga
+	sitedirectory /home/pi/Desktop/webServer/websites/ytviewer.ga/
+	directoryroot index.html
+/>
+
+<
+	sitedomain satecadmission.cf
+	sitedirectory /home/pi/Desktop/webServer/websites/satecadmission.cf/
+	directoryroot index.html
+/>
+
+<
+        sitedomain myhtmlexperience.ga
+        sitedirectory /home/pi/Desktop/webServer/websites/myhtmlexperience.ga/
+        directoryroot index.html
+/>
+
+<
+	sitedomain 127.0.0.1:5500
+	sitedirectory /home/rowan/Desktop/IMPORTANT/webServer/websites/minigames.host/
+	directoryroot index.html
+/>

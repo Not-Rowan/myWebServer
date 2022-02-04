@@ -1,0 +1,3 @@
+Mac webserver dir: cd /Users/rowan/Desktop/IMPORTANT/webServer\(Mac\)/ && gcc webServer.c -o webServer -Wall -lpthread && "/Users/rowan/Desktop/IMPORTANT/webServer(Mac)/"webServer -lpthread -Wall
+
+Rpi webserver dir: cd /home/pi/Desktop/webServer && gcc webServer.c -o webServer -Wall -lpthread && "/home/pi/Desktop/webServer/"webServer -lpthread -Wall
