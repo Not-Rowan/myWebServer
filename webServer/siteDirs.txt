@@ -1,5 +1,5 @@
 <
-	sitedomain example.com
+	sitedomain website.com
 	sitedirectory /directory/to/the/folder
-	directoryroot sideroot.html
+	directoryroot index.html
 />
