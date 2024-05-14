@@ -2,7 +2,7 @@
 #include <web_server_lib/web_server.h>
 
 int main() {
-    int web_server_sock = web_server_init(8080, "/home/ubuntu/website_hosting/websites", "/home/ubuntu/website_hosting/websites/index.html");
+    int web_server_sock = web_server_init(8080, "path/to/websites/folder", "/path/to/homepage/page/navigator");
     if (web_server_sock == 1) {
         printf("Error: web_server_init() failed\n");
         return 1;
