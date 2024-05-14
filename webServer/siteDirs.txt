@@ -1,5 +1,0 @@
-<
-	sitedomain website.com
-	sitedirectory /directory/to/the/folder
-	directoryroot index.html
-/>
