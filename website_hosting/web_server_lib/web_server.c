@@ -237,7 +237,7 @@ int send_http_response(int client_socket, char *file_dir) {
     } else if (strcasestr(file_dir, ".txt") != NULL) {
         sprintf(http_response, "HTTP/1.0 200\r\nConnection: close\r\nContent-Type: text/plain\r\nContent-Length: %d\r\n\r\n", fsize);
     } else {
-        sprintf(http_response, "HTTP/1.0 200/r/nContent-Type: text/plain\r\nContent-Length: %d\r\n\r\n", fsize);
+        sprintf(http_response, "HTTP/1.0 200\r\nContent-Type: text/plain\r\nContent-Length: %d\r\n\r\n", fsize);
     }
 
 
